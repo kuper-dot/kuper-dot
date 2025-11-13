@@ -1,1 +1,9 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text&display=swap');
+   
+h1 {
+    font-family: 'Stack Sans Text', sans-serif;
+    font-weight: 800;
+    
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
