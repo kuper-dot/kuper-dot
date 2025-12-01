@@ -17,5 +17,11 @@ Currently I’m a first year student in [University of south Wales] doing comput
 In my free time I enjoy tinkering with my home server. My home lab consists of a TrueNAS machine and a proxmox system that host everything else. Using that setup I managed to learn quite a lot about Linux 
 
 ## My Skills
+As I mentioned in previous sections, I have my own home server that I spent some time on maintaining. I also took part in multiple IT support competitions; those competitions test my ability of performing administration of Linux and Windows based systems.
+
+As a side effect of creating a home server, I picked up some networking skills along the way. While I won’t describe myself as proficient in network architecture, I will say that I know basics very well.
+
+While I’m not a big fan of codding, I know few languages on a basic level, those include Phyton, C# and C++. I have written a few basic projects in those languages. I also have some very basic experience of managing SQL databases.
+
 ## My Hobbies
 
