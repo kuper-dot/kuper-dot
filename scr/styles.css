@@ -6,3 +6,21 @@ h1 {
     font-weight: 800;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: 1280px) {
+    html {
+        font-size: 112.5%; /* 18px base font */
+    }
+}
+
+@media (min-width: 1536px) {
+    html {
+        font-size: 125%; /* 20px base font */
+    }
+}
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 137.5%; /* 22px base font */
+    }
+}
