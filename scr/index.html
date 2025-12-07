@@ -7,7 +7,8 @@
 </head>
 <body>
 <nav class="fixed w-full z-20 top-0 start-0 backdrop-blur-3xl bg-white/75 dark:bg-neutral-dark/95">
-  <div class="text-whitemax-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div class="text-white max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Kuper-Dot</span>
     </a>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -72,19 +73,68 @@
 
 <div class="relative">
   <!-- Slide 1 -->
-  <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-black to-pink-800 text-white">
-        <h2 class="text-4xl font-medium">Hello. My name is <span class="font-extrabold border-dotted">Anton</span></h2>
-        <p class="mt-4">Scroll Down</p>
-    </div>
-  
-  <!-- Slide 2 -->
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b bg-gradient-to-b from-gray-900 to-indigo-900 text-white">
-        <h2 class="text-4xl font-bold">What am i doing now</h2>
-        <p class="mt-2">Scroll Down for next slide</p>
-    </div>
+  <div id="about" class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-black to-pink-800 text-white overflow-y-auto p-4">    
+    <h2 class="text-4xl font-light tracking-wide mb-12 text-center drop-shadow-lg">
+      Hello. My name is <span class="font-extrabold border-b border-white/50">Anton</span>
+    </h2>
+    
+    <div class="max-w-4xl w-full text-left p-6 sm:p-0"> 
+      
+      <p class="text-xl leading-relaxed mb-8 border-l-2 border-pink-500 pl-4">
+        I'm a Ukrainian national who immigrated to the UK in 2023. During my childhood, my father sparked an interest in computers, and that passion has only grown. By now, I've decided my future career must be in the IT sector.
+      </p>
+      
+      <div class="space-y-6 text-lg leading-relaxed"> 
+        
+        <p>
+          When my family and I first moved to the UK, I enrolled in the **Information Technology Course** at Bridgend College, where I completed BTEC Levels 2 and 3. My time there allowed me to gain a solid foundation in core IT skills.
+        </p>
 
-    <!-- Slide 3 -->
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b bg-gradient-to-b from-green-900 to-gray-900 text-white">
+        <p class="text-blue-300/80 font-semibold uppercase tracking-widest mt-10 mb-4">
+          Key Achievements
+        </p>
+        
+        <ul class="list-none space-y-4">
+          <li class="relative pl-6 before:content-['—'] before:absolute before:left-0 before:text-blue-300/80 hover:text-pink-300 transition-colors duration-300">
+            I competed in the **Skills Excellence in Wales** competition for the "IT Technician" discipline, where I proudly won a gold medal.
+          </li>
+          <li class="relative pl-6 before:content-['—'] before:absolute before:left-0 before:text-blue-300/80 hover:text-pink-300 transition-colors duration-300">
+            In November 2025, I was a competitor on the national level at World Skills UK in the same discipline. While I didn't win a medal there, I was highly commended for my performance.
+          </li>
+        </ul>
+      </div>
+      <div class="pb-12"></div>
+    </div>
+  </div>
+  <!-- Slide 2 -->
+  <div id="doing" class="sticky top-0 min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-indigo-900 text-white pt-20 pb-20">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+      <div class="md:w-1/2 mb-10 md:mb-0 p-4"> 
+        <h2 class="text-4xl font-light tracking-wide mb-8 text-center drop-shadow-lg">
+            What I Am <span class="font-extrabold border-b border-white/50">Doing Now</span>
+        </h2>
+        <p class="text-xl leading-relaxed mb-8 border-l-2 border-indigo-400 pl-4">
+            I am currently a first-year **Computer Science student** at the University of South Wales, focusing on modules like **Computer System Concepts** and **Information Management, Assurance and Security**.
+        </p>
+        <div class="space-y-6 text-lg leading-relaxed mb-10">
+            <p>
+                In my personal time, I actively manage a home lab consisting of a **TrueNAS NAS** and a **Proxmox** virtualization system. This hands-on work has forced me to master practical skills like configuring DNS, managing networking protocols, and securing SMB shares using Linux ACLs.
+            </p>
+          </div>
+      </div>
+      
+      <div class="md:w-1/2 flex justify-center transition hover:scale-105 duration-300"> 
+        <img 
+          src="https://www.southwales.ac.uk/media/university-of-south-wales/site-assets/testing/arianex27s-testing-images/Glyntaff-Campus_48630.jpg" 
+          alt="University of South Wales Campus" 
+          class="w-full max-w-lg object-contain rounded-xl max-h-[70vh] shadow-2xl"
+        />
+    </div>
+  </div>
+</div>
+
+<!-- Slide 3 -->
+    <div id="skills" class="sticky top-0 min-h-screen flex flex-col items-center justify-center bg-gradient-to-b bg-gradient-to-b from-green-900 to-gray-900 text-white">
       <h2 class="text-4xl font-bold">Skills</h2>
       <section class="py-8">
         <div class="max-w-5xl mx-auto text-center space-y-12">
@@ -99,11 +149,11 @@
         </div>
       </section>
     </div>
-
     <!-- Slide 4 -->
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-fuchsia-950 text-white">
+    <div id="hobbies" class="sticky top-0 min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-fuchsia-950 text-white">
         <h2 class="text-4xl font-bold">The Fourth slide</h2>
     </div>
-</div>
+    </div>
+  </div>
 </body>
 </html>
