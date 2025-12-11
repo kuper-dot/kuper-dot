@@ -24,3 +24,13 @@ h1 {
         font-size: 137.5%; /* 22px base font */
     }
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

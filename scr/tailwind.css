@@ -356,6 +356,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -943,6 +946,15 @@ h1 {
 @media (min-width: 1920px) {
   html {
     font-size: 137.5%;
+  }
+}
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 @property --tw-space-y-reverse {
